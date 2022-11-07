@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="./main/assets/img/favicon.png" rel="icon">
-  <link href="./main/assets/img/favicon.png" rel="apple-touch-icon">
+  <link href=".assets/img/favicon.png" rel="icon">
+  <link href="assets/img/favicon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
@@ -21,7 +21,7 @@
   <link href="./assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="./assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
 
   
 </head>
@@ -33,13 +33,12 @@
     <div class="container-fluid d-flex justify-content-between align-items-center">
 
       <div class="logo">
-        <h1 class="text-light"><a href="index.html"><span>WeBuild</span></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        <h1 class="text-light"><a href="index.html"><span>NEET TIMER</span></a></h1>
+       
       </div>
 
       <div class="contact-link float-right">
-        <a href="#contact" class="scrollto">Contact Us</a>
+        <a href="reddit.com/user/Ok-Wait-9" class="scrollto">Follow-me</a>
       </div>
 
     </div>
@@ -48,19 +47,37 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container">
-      <h1>TIME LEFT</h1>
+      <h1>TIME LEFT FOR NEET EXAMINATION</h1>
       <h2></h2>
-      <div class="countdown" data-count="2023/5/7" data-template="%d days %h:%m:%s"></div>
-
-      <form action="forms/notify.php" method="post" role="form" class="php-email-form">
-        <div class="row no-gutters">
-          <div class="col-md-6 form-group pr-md-1">
-            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-          </div>
-          <div class="col-md-6 form-group pl-md-1">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-          </div>
-        </div>
+       <h1 style="text-align: center;">JEEM 1st Attempt in</h1>
+<h1 id="timer002"></h1>
+<script>
+    var countDownDate002 = new Date("January 15, 2023 09:00:00").getTime();
+    var now002 = new Date().getTime();
+      var distance002 = countDownDate002 - now002;
+      var days002 = Math.floor(distance002 / (1000 * 60 * 60 * 24));
+      var hours002 = Math.floor((distance002 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes002 = Math.floor((distance002 % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds002 = Math.floor((distance002 % (1000 * 60)) / 1000);
+      document.getElementById("timer002").innerHTML = days002 + "d " + hours002 + "h " + minutes002 + "m " + seconds002 + "s ";
+      if (distance002 < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      } 
+    var x = setInterval(function() {
+      var now002 = new Date().getTime();
+      var distance002 = countDownDate002 - now002;
+      var days002 = Math.floor(distance002 / (1000 * 60 * 60 * 24));
+      var hours002 = Math.floor((distance002 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes002 = Math.floor((distance002 % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds002 = Math.floor((distance002 % (1000 * 60)) / 1000);
+      document.getElementById("timer002").innerHTML = days002 + "d " + hours002 + "h " + minutes002 + "m " + seconds002 + "s ";
+      if (distance002 < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+</script>
 
         <div class="my-3">
           <div class="loading">Loading</div>
