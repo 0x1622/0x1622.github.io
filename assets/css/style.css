@@ -90,7 +90,7 @@ h6,
   width: 100%;
   height: 100vh;
   body{
-  background-image: url('http://i.stack.imgur.com/kx8MT.gif');
+  bbackground: url("../img/kx8MT.gif") top center;
   background-size: cover;
   position: relative;
   margin-top: -80px;
