@@ -9,7 +9,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Copperplate, Papyrus, fantasy", Copperplate, Papyrus, fantasy;
   color: #444;
 }
 
@@ -30,7 +30,7 @@ h4,
 h5,
 h6,
 .font-primary {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", Copperplate, Papyrus, fantasy;
 }
 
 /*--------------------------------------------------------------
