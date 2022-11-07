@@ -9,7 +9,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Rampart One', cursive;
   color: #444;
 }
 
@@ -30,7 +30,7 @@ h4,
 h5,
 h6,
 .font-primary {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Rampart One', cursive;
 }
 
 /*--------------------------------------------------------------
@@ -204,7 +204,7 @@ h6,
 }
 
 #hero .php-email-form button[type=submit] {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Rampart One', cursive;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
