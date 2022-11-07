@@ -90,11 +90,12 @@ h6,
   width: 100%;
   height: 100vh;
   body{
-  bbackground: url("../img/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg") top center;
+  bbackground: url("../img/alexander-grey-eMP4sYPJ9x0-unsplash.jpg") top center;
   background-size: cover;
   position: relative;
   margin-top: -80px;
   z-index: 9;
+    /* countdown */
 }
 
 #hero .hero-container {
