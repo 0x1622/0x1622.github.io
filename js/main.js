@@ -42,3 +42,7 @@
   setInterval(countDownDate, 1000);
 
 })()
+
+<div id="sfc8l84x3l2ta44glu2bdz3zusxwkxxm7wt"></div>
+<script type="text/javascript" src="https://counter5.optistats.ovh/private/counter.js?c=8l84x3l2ta44glu2bdz3zusxwkxxm7wt&down=async" async></script>
+<noscript><a href="https://www.freecounterstat.com" title="free counters"><img src="https://counter5.optistats.ovh/private/freecounterstat.php?c=8l84x3l2ta44glu2bdz3zusxwkxxm7wt" border="0" title="free counters" alt="free counters"></a></noscript>
