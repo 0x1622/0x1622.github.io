@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cyberpunk Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Share Tech Mono', monospace;
+            background-color: #0a0a0a;
+            color: #00ff00;
+        }
+        h1, h2, h3 {
+            font-family: 'Orbitron', sans-serif;
+        }
+        .cyber-border {
+            border: 2px solid #00ff00;
+            box-shadow: 0 0 10px #00ff00, inset 0 0 10px #00ff00;
+        }
+        .cyber-button {
+            background-color: transparent;
+            border: 2px solid #00ff00;
+            color: #00ff00;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+        }
+        .cyber-button:hover {
+            background-color: #00ff00;
+            color: #0a0a0a;
+            box-shadow: 0 0 20px #00ff00;
+        }
+        .glitch {
+            position: relative;
+        }
+        .glitch::before,
+        .glitch::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .glitch::before {
+            left: 2px;
+            text-shadow: -2px 0 #ff00ff;
+            clip: rect(24px, 550px, 90px, 0);
+            animation: glitch-anim-2 3s infinite linear alternate-reverse;
+        }
+        .glitch::after {
+            left: -2px;
+            text-shadow: -2px 0 #00ffff;
+            clip: rect(85px, 550px, 140px, 0);
+            animation: glitch-anim 2.5s infinite linear alternate-reverse;
+        }
+        @keyframes glitch-anim {
+            0% { clip: rect(99px, 9999px, 39px, 0); }
+            100% { clip: rect(3px, 9999px, 117px, 0); }
+        }
+        @keyframes glitch-anim-2 {
+            0% { clip: rect(80px, 9999px, 83px, 0); }
+            100% { clip: rect(32px, 9999px, 67px, 0); }
+        }
+        .contact-icons img {
+            width: 24px;
+            height: 24px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body class="bg-black text-green-400">
+    <nav class="bg-gray-900 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold glitch" data-text="Your Name">Your Name</h1>
+            <ul class="flex space-x-4">
+                <li><a href="#about" class="hover:text-green-300">About</a></li>
+                <li><a href="#ctf" class="hover:text-green-300">CTF Writeups</a></li>
+                <li><a href="#resume" class="hover:text-green-300">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="container mx-auto mt-16 text-center">
+        <h1 class="text-5xl font-bold mb-4 glitch" data-text="Cybersecurity Enthusiast">Cybersecurity Enthusiast</h1>
+        <p class="text-xl mb-8">CTF Player | Security Researcher | Code Breaker</p>
+        <a href="#contact" class="cyber-button">Get in touch</a>
+    </header>
+
+    <main class="container mx-auto mt-16">
+        <section id="about" class="mb-16">
+            <h2 class="text-3xl font-bold mb-4">About Me</h2>
+            <div class="cyber-border p-6">
+                <p>I’m a second-year B.E. student at BITS Pilani, and I’ve been deeply involved in cybersecurity since 2022. Although I only started actively participating in CTFs in 2023, I've made significant progress. I competed in Shunya CTF 2024 and was part of a team that reached the top 25. I also managed to secure a top 100 placement out of over 8000 participants in a national CTF and finished in the top 20 in the finals. My focus areas include web security, forensic analysis, and OSINT.</p>
+            </div>
+        </section>
+
+        <section id="ctf" class="mb-16">
+            <h2 class="text-3xl font-bold mb-4">CTF Writeups</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="cyber-border p-6">
+                    <h3 class="text-xl font-bold mb-2">HackTheBox: Cyber Apocalypse 2023</h3>
+                    <p>A detailed walkthrough of the challenges I solved during the Cyber Apocalypse 2023 CTF event, including web exploitation, cryptography, and reverse engineering tasks.</p>
+                    <a href="writeup1.html" class="text-blue-400 hover:underline">Read More</a>
+                </div>
+                <div class="cyber-border p-6">
+                    <h3 class="text-xl font-bold mb-2">PicoCTF 2023: Binary Exploitation</h3>
+                    <p>An in-depth analysis of the binary exploitation challenges I tackled during PicoCTF 2023, showcasing my problem-solving skills and technical expertise.</p>
+                    <a href="writeup2.html" class="text-blue-400 hover:underline">Read More</a>
+                </div>
+                <div class="cyber-border p-6">
+                    <h3 class="text-xl font-bold mb-2">Writeup 3</h3>
+                    <p>A summary of the Writeup 3 challenges and solutions.</p>
+                    <a href="writeup3.html" class="text-blue-400 hover:underline">Read More</a>
+                </div>
+                <div class="cyber-border p-6">
+                    <h3 class="text-xl font-bold mb-2">Writeup 4</h3>
+                    <p>A summary of the Writeup 4 challenges and solutions.</p>
+                    <a href="writeup4.html" class="text-blue-400 hover:underline">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="mb-16">
+            <h2 class="text-3xl font-bold mb-4">Resume</h2>
+            <div class="cyber-border p-6">
+                <h3 class="text-2xl font-bold mb-2">Skills</h3>
+                <ul class="list-disc list-inside mb-4">
+                    <li>Web Application Security</li>
+                    <li>Network Penetration Testing</li>
+                    <li>Reverse Engineering</li>
+                    <li>Cryptography</li>
+                    <li>Python, C++, JavaScript</li>
+                </ul>
+                <h3 class="text-2xl font-bold mb-2">Experience</h3>
+                <div class="mb-4">
+                    <h4 class="text-xl font-bold">Security Researcher, CyberGuard Inc.</h4>
+                    <p class="italic">2021 - Present</p>
+                    <ul class="list-disc list-inside">
+                        <li>Conducted vulnerability assessments on client networks</li>
+                        <li>Developed custom tools for penetration testing</li>
+                        <li>Authored detailed security reports and remediation plans</li>
+                    </ul>
+                </div>
+                <a href="https://drive.google.com/file/d/14YmzEhUBQWS28HPX4bwki78QZGZM_2oO/view?usp=sharing" class="cyber-button" target="_blank">Download Full Resume</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-center p-4 mt-13">
+        <div class="flex justify-center items-center space-x-4">
+            <p class="text-center text-gray-400">&copy; 2024 Your Name. All rights reserved.</p>
+            <div class="contact-icons flex space-x-4">
+                <a href="https://instagram.com/shriramdhumal22" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png " class="w-1 h-1"  alt="Instagram">
+                </a>
+                <a href="https://x.com/0x1622" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" class="w-6 h-6" alt="Twitter">
+                </a>
+                <a href="mailto:f20230003@pilani.bits-pilani.ac.in">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" class="w-6 h-6" alt="Gmail">
+                </a>
+            </div>
+        </div>
+    </footer>
+    
