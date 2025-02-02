@@ -167,3 +167,32 @@ footer {
     display: block;
     text-align: center;
 }
+
+.ascii-container h1 {
+    font-size: 10em;
+    color: rgb(239, 93, 105);
+    margin-bottom: 10px;
+}
+
+.ascii-container p {
+    font-size: 5em;
+    color: #fff;
+    margin: 5px 0;
+}
+
+.ascii-container f{
+    text-align: center;
+    padding: 15px;
+    font-size: 4em;
+    color: #fff;
+    margin: 5px 0;
+    margin-top: auto;
+    width: 100%;
+}
+
+#dynamic-path {
+    font-family: 'Lexend Giga', monospace;
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+}

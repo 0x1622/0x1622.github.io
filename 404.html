@@ -2,9 +2,23 @@
 <html>
 <head>
     <title>404 - Page Not Found</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@400;700&display=swap' rel='stylesheet'>
 </head>
 <body>
-    <h1>404</h1>
-    <p>Oops! The page you're looking for doesn't exist.</p>
+    <div class="container">
+        <div class="ascii-container">
+            <h1>404</h1>
+            <p>Page Not Found</p>
+            <p id="dynamic-path"></p>
+        </div>
+    </div>
 </body>
+<script>
+    // Get the attempted path from URL
+    const path = window.location.pathname;
+    const cleanPath = path.replace(/^\/|\/$/g, ''); // Remove leading/trailing slashes
+    const displayPath = cleanPath || 'home'; // Use 'home' if path is empty
+    document.getElementById('dynamic-path').textContent = `root@0x1622:~$ cd /${displayPath}/`;
+</script>
 </html>
