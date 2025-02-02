@@ -117,6 +117,9 @@ nav a:hover::after {
     height: 40px;
     min-height: 180px;
 }
+.red-dot {
+    color: #1a696d;
+  }
 
 footer {
     text-align: center;
