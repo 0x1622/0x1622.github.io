@@ -1,105 +1,129 @@
 body {
     background-color: #000;
+    font-family: Arial, Helvetica, sans-serif;
     color: #fff;
-    font-family: 'Monaco', monospace ;
-    margin: 0;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.ascii-container {
+    font-family: 'Courier New', monospace;
+    white-space: pre-wrap;
+    line-height: 1;
+    margin: 1.5px auto;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 25px;
+    border-radius: 5px;
+    font-size: 10px;
+    flex-direction: center;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    max-width: 100%;
+   
+}
+
+nav {
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 800px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: clamp(1.2em, 4vw, 1.8em);
+    transition: color 0.3s ease;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    padding: 5px 10px;
+}
+
+.spotify-card {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    width: min(350px, 90vw);
+    height: auto;
+    min-height: 180px;
 }
 
 footer {
     text-align: center;
     font-family: 'Jazz LET', monospace;
-    padding: 10px 0;
-    font-size: 1.em;
+    padding: 15px;
+    font-size: clamp(0.8em, 3vw, 1em);
     color: #aaa;
-    margin-top: auto; /* Push footer to bottom */
-    width: 100%; /* Ensure footer takes full width */
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background for footer */
-    padding: 15px 0; /* Add padding to the top and bottom */
+    margin-top: auto;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-.container {
-    height: 55vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .ascii-container {
+        font-size: 8px;
+        padding: 8px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .container {
+        height: auto;
+        padding: 20px 0;
+    }
 }
 
-.ascii-container {
-    line-height: 1;
-    color: #ff073a;
-    font-size: 10px;
+@media screen and (max-width: 480px) {
+    .ascii-container {
+        font-size: 6px;
+        padding: 6px;
+    }
+    
+    .spotify-card iframe {
+        width: 100% !important;
+    }
+}
+
+/* Ensure the ASCII art scales properly */
+.ascii-line {
+    display: block;
     text-align: center;
-}
-
-nav {
-    margin: 2rem 0;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-    padding: 0;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.9rem;
-    transition: color 0.3s, text-shadow 0.3s;
-}
-
-nav a:hover {
-    color: #ff073a;
-    text-shadow: 0 0 10px #ff073a;
-}
-
-.spotify-card {
-    background-color: rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    width: 350px;
-    height: 69px;
-    padding: 30px;
-    margin: 20px auto;
-}
-
-.last-played {
-    color: #ff073a;
-    font-size: 0.9em;
-    margin-bottom: 10px;
-    font-family: 'Courier New', monospace;
-}
-
-.track-info {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.track-image {
-    width: 60px;
-    height: 60px;
-    border-radius: 4px;
-}
-
-.track-details {
-    flex-grow: 1;
-}
-
-.track-name {
-    color: #fff;
-    font-size: 1.2em;
-    margin: 0;
-}
-
-.track-meta {
-    color: #666;
-    font-size: 0.9em;
-    margin: 5px 0;
 }
