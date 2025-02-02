@@ -1,0 +1,151 @@
+body {
+    background-color: #000;
+    font-family: 'Chalkduster', monospace;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Hide scrollbars if content overflows */
+}.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55vh; /* Adjust as needed */
+    margin-bottom: 30px;
+}
+
+
+nav {
+    margin-bottom: 30px;  /* Increased spacing */
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8em;
+    transition: color 0.3s ease;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+nav a:hover {
+    color: #ff0000;
+    text-shadow: 0 0 10px #ff0000;
+}
+
+.spotify-card {
+    background-color: #000000; /* Or transparent if you prefer */
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    width: 350px; /* Set a fixed width for the card */
+    height: 180px; /* Set a fixed height for the card */
+}
+
+.album-cover {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.song-info {
+  flex-grow: 1;
+}
+
+.track-name, .artist-name {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.play-button {
+  width: 30px;
+  height: 30px;
+  background-color: #ff0000; /* Red play button */
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  /* Add a play icon here using background-image or a library */
+}
+
+footer {
+    text-align: center;
+    font-family: 'Jazz LET', monospace;
+    padding: 10px 0;
+    font-size: 1em;
+    color: #aaa;
+    margin-top: auto; /* Push footer to bottom */
+    width: 100%; /* Ensure footer takes full width */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background for footer */
+    padding: 15px 0; /* Add padding to the top and bottom */
+}
+
+.ascii-container {
+    font-family: 'Courier New', monospace;
+    white-space: pre-wrap;
+    line-height: 1;
+    margin: 1px auto;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 10px; 
+    flex-direction: center;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 50%; /* Make it take up full height of the container */
+    }
+
+.ascii-line {
+    display: block;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes glitch {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-2px, 2px); }
+    50% { transform: translate(2px, -2px); }
+    75% { transform: translate(-1px, 1px); }
+    100% { transform: translate(0, 0); }
+}
+
+/* Add scanlines (subtle) */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: repeating-linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.1) 1px,
+        transparent 1px,
+        transparent 2px
+    );
+    z-index: -1; /* Behind other content */
+    opacity: 0.2; /* Adjust scanline visibility */
+}
