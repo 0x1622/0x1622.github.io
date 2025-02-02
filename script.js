@@ -64,7 +64,7 @@ lines.forEach(line => {
 
 
 // Spotify Embed
-const playlistId = '0R4sEgLGHVo2wAgV8htLj6'; // Your playlist ID
+const playlistId = '0iBjGsWfe7RuZ6yxtJRfsW'; // Your playlist ID
 
 const iframe = document.createElement('iframe');
 iframe.title = "Spotify Embed: Recommendation Playlist";
